@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>I am Shiggy - Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,600;0,700;0,800;0,900;1,400&display=swap" rel="stylesheet">
+    <style>
+      :root {
+        font-family: "Rubik", sans-serif;
+      }
+
+      .center-container {
+        margin-left: auto;
+        margin-right: auto;
+        height: 100vh;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+      }
+
+      .grid {
+
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 3px;
+      }
+
+      .box {
+        padding: 10px 10px 10px 10px;
+        border: 1px gray;
+        border-radius: 0.375rem;
+        /* 6px */
+        transition-property: all;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-duration: 150ms;
+        box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+        cursor: pointer;
+        transition-duration: 300ms;
+
+      }
+
+      .box:hover {
+        color: red;
+      }
+
+    </style>
+  </head>
+
+  <body>
+    <div class="center-container">
+      <div>
+        <h1>Hi I am Shiggy</h1>
+        <p>I'm a web developer proeficient in JavaScript / TypeScript.</p>
+        <p>I am currently working on <strong>Anomia</strong>!</p>
+        <div class="grid">
+          <div class="box">My Work</div>
+          <div class="box">GitHub</div>
+          <div class="box">Current Projects</div>
+          <div class="box">Companies</div>
+        </div>
+      </div>
+    </div>
+  </body>
+
+</html>
