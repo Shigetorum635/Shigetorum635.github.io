@@ -2,68 +2,45 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>I am Shiggy - Portfolio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,600;0,700;0,800;0,900;1,400&display=swap" rel="stylesheet" />
-    <style>
-      :root {
-        font-family: "Rubik", sans-serif;
-      }
-
-      .center-container {
-        margin-left: auto;
-        margin-right: auto;
-        height: 100vh;
-        justify-content: center;
-        display: flex;
-        align-items: center;
-      }
-
-      .grid {
-
-        display: grid;
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-        gap: 3px;
-      }
-
-      .box {
-        padding: 10px 10px 10px 10px;
-        border: 1px gray;
-        border-radius: 0.375rem;
-        /* 6px */
-        transition-property: all;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-        transition-duration: 150ms;
-        box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
-        cursor: pointer;
-        transition-duration: 300ms;
-
-      }
-      a {
-        color: inherit;
-        text-decoration: none;
-      }
-      .box:hover {
-        color: red;
-      }
-    </style>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shigetorum635 - Portfolio</title>
+      <script src="https://cdn.tailwindcss.com"></script>
   </head>
-
   <body>
-    <div class="center-container">
+    <div class="fixed flex h-screen w-screen items-center justify-center">
       <div>
-        <h1>Hi I am Shiggy</h1>
-        <p>I'm a web developer proeficient in JavaScript / TypeScript.</p>
-        <p>
-          I am currently working on <strong><a href="https://github.com/Anomia-s">Anomia</a></strong
-          >!
-        </p>
-        <div class="grid">
-          <div class="box"><a href="">My Work</a></div>
-          <div class="box"><a href="https://github.com/Shigetorum635/">GitHub</a></div>
-          <div class="box"><a href="">Current Projects</a></div>
-          <div class="box"><a href="/companies.html">Companies</a></div>
+        <div class="mb-5">
+          <img src="https://media.discordapp.net/attachments/942035235879649301/1015751587601330317/unknown.png" alt="" class="mx-auto h-28 w-28 rounded-full object-cover object-center" />
+          <div class="text-center text-3xl">Shigetorum</div>
+          <div class="mb-1 text-center italic">Web Developer</div>
+          <div class="mx-auto grid w-44 gap-2">
+            <div class="grid grid-cols-2"><span class="text-purple-600">[Discord]</span>Shigetorum#3974</div>
+            <div class="grid grid-cols-2"><span class="text-gray-600">[GitHub]</span>Shigetorum635</div>
+            <div class="grid grid-cols-2"><span class="text-orange-600">[Steam]</span>Edge</div>
+            <div class="grid grid-cols-2"><span class="text-blue-600">[Twitter]</span>@Shigero08</div>
+          </div>
+        </div>
+        <div class="space-y-1 border p-1 text-center">
+          <div>Privacy & FOSS activist</div>
+          <div>TypeScript & Nim</div>
+        </div>
+        <div class="mt-5">
+          <div class="mb-2 text-center text-lg font-bold">Projects</div>
+          <div class="grid w-80 gap-2">
+            <div class="w-full border p-1">
+              <div class="font-bold">Anomia</div>
+              <div>A privacy activism group & website.</div>
+            </div>
+            <div class="w-full border p-1">
+              <div class="font-bold">Vixlatio</div>
+              <div>A Roblox-Like sandbox website.</div>
+            </div>
+            <div class="w-full border p-1">
+              <div class="font-bold">Freelance</div>
+              <div>I work in open and private projects with other people.</div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
